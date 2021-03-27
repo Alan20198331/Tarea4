@@ -10,9 +10,9 @@ library(ggplot2)
 
 #Luego, vamos a pasar los datos de nuestras tablas a nuestro programa convirtiendolos en variables.
 
-DatosEst <- read_csv2("Asistencia_Jovenes.csv")
-DatosEco <- read_csv2("Actividad_Economica.csv")
-DatosOMSA <- read_csv2("Nomina_Emp_OMSA.csv")
+DatosEst <- read_csv2("http://cestur.gob.do/download/1695/asistencias-a-nna/124191/estadisticas-nnas-2020-_sept_oct_nov_dic.csv")
+DatosEco <- read_csv2("https://www.uaf.gob.do/transparencia/index.php/datos-abiertos/datos-publicados-en-formatos-abiertos/category/432-sujetos-obligados-por-actividad-economica?download=2509:sujetos-obligados-por-actividad-economica")
+DatosOMSA <- read_csv2("http://omsa.gob.do/transparencia/index.php/datos-abiertos?download=4692:nomina-de-empleados-omsa-enero-2018-2021-csv&start=300")
 
 #Vamos ahora a confirmar si las variables han recibido los datos exitosamente.
 
