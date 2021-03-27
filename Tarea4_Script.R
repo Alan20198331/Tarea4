@@ -26,6 +26,7 @@ datos1 <- na.omit(DatosEst)
 datos2 <- na.omit(DatosEco)
 datos3 <- na.omit(DatosOMSA)
 
+
 #Voy a renombrar las columnas para que sea mas facil hacer las graficas.
 
 datos1 = datos1[complete.cases(datos1),]
@@ -62,7 +63,7 @@ plot(densidad_cant,
      xlab = "Cantidad",
      ylab = "Frecuencia")
 
-plot(CANTIDAD, main = "Gráfico demostrando la cantidad de los Jovenes.",
+plot(CANTIDAD,main = "Gráfico demostrando la cantidad de los Jovenes.",
      xlab = "Frecuencia", ylab = "Cantidad")
 
 boxplot(CANTIDAD ~ MES, main = "Gráfico de Diagrama de Cajas de los Jovenes",
@@ -135,16 +136,20 @@ plot(densidad_sueld,
      ylab = "Frecuencia")
 
 plot(SUELDO, main = "Gráfico demostrando la frecuencia de ciertos Sueldos",
-     xlab = "Frecuencia", ylab = "Cantidad")
+     xlab = "Cantidad", ylab = "Frecuencia")
 
-boxplot(SUELDO ~ YEAR, main = "Gráfico de Diagrama de Los Sueldos de los Empleados",
-        xlab = "Año",
+table(MES)
+
+boxplot(SUELDO ~ MES, main = "Gráfico de Diagrama de Los Sueldos de los Empleados",
+        xlab = "Mes",
         ylab = "Sueldo",
         col="green"
 )
 
+table(YEAR)
+
 plot(x = SUELDO, y = YEAR,
-     main = "Gráfico de Dispercion de los Sueldos 2018-2020.",
+     main = "Gráfico de Dispercion de los Sueldos 2018-2021.",
      ylab = "Año",
      xlab = "Sueldo",
      sub = "Evaluando el sueldo de los empleados y El año que lo recibieron.",
