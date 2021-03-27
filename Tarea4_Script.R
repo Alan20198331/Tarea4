@@ -63,7 +63,7 @@ plot(densidad_cant,
      ylab = "Frecuencia")
 
 plot(CANTIDAD, main = "Gráfico demostrando la cantidad de los Jovenes.",
-     xlab = "Cantidad", ylab = "Frecuencia")
+     xlab = "Frecuencia", ylab = "Cantidad")
 
 boxplot(CANTIDAD ~ MES, main = "Gráfico de Diagrama de Cajas de los Jovenes",
         xlab = "Mes",
@@ -99,7 +99,7 @@ plot(densidad_cant,
      ylab = "Frecuencia")
 
 plot(CANTIDAD, main = "Gráfico demostrando la cantidad de los Sujetos.",
-     xlab = "Cantidad", ylab = "Frecuencia")
+     xlab = "Frecuencia", ylab = "Cantidad")
 
 boxplot(CANTIDAD ~ YEAR, main = "Gráfico de Diagrama de Cajas de los Sujetos",
         xlab = "Año",
@@ -135,7 +135,7 @@ plot(densidad_sueld,
      ylab = "Frecuencia")
 
 plot(SUELDO, main = "Gráfico demostrando la frecuencia de ciertos Sueldos",
-     xlab = "Cantidad", ylab = "Frecuencia")
+     xlab = "Frecuencia", ylab = "Cantidad")
 
 boxplot(SUELDO ~ YEAR, main = "Gráfico de Diagrama de Los Sueldos de los Empleados",
         xlab = "Año",
