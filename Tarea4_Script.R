@@ -73,7 +73,7 @@ boxplot(CANTIDAD ~ MES, main = "Gráfico de Diagrama de Cajas de los Jovenes",
 
 plot(x = CANTIDAD, y = YEAR,
      main = "Gráfico de Dispercion de los Jovenes.",
-     ylab = "Año",
+     ylab = "Año", ylim=range(2017:2021),
      xlab = "Cantidad",
      sub = "Evaluando su cantidad y El año.",
      col = c("#99cc99", "#cc9999", "#9999cc", "#9c9c9c")
